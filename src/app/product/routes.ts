@@ -18,7 +18,7 @@ export default [
     {
         path: '', // /products
         component: Product,
-        canActivate: [productGuard]
+
     },
     {
         path: 'consulter', // /products/consulter

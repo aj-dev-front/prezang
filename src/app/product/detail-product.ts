@@ -11,5 +11,5 @@ import { ActivatedRoute } from '@angular/router';
     imports: [JsonPipe]
 })
 export class DetailProduct {
-    protected readonly params = toSignal(inject(ActivatedRoute).params)
+    protected readonly params = toSignal(inject(ActivatedRoute).params, {})
 }
