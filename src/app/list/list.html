@@ -1,0 +1,5 @@
+@for (item of items(); track item.id) {
+    <app-item [item]="item" (actions)="manageActions($event)"/>
+} @empty {
+    <p>vide</p>
+}
