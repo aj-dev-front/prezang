@@ -6,11 +6,6 @@ import {
 
 import { ProductDomain } from '../../domain/product';
 
-export type Product = {
-  id: number,
-  name: string,
-}
-
 @Component({
   selector: 'app-product',
   imports: [],

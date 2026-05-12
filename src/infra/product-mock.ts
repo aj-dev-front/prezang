@@ -3,12 +3,13 @@ import {
   of,
 } from 'rxjs';
 
-import { Product } from '../app/product/product';
+import { Product } from '../app/product/product.model';
+import products from '../mocks/products.json';
 import { Infra } from './infra';
 
 export class ProductMock implements Infra<Product> {
   get(): Observable<Product[]> {
-    const result: Product[] = [{id: 1, name: 'toto'}, {id: 2, name: 'titi'}];
+    const result: Product[] = products;
     return of(result)
   }
 }

@@ -4,17 +4,13 @@ import {
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
-import { ProductMock } from '../infra/product-mock';
-import { ProductInfra } from '../token';
+import provideInfra from './providers/infra';
 import { routes } from './routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideInfra,
     provideRouter(routes),
     provideBrowserGlobalErrorListeners(),
-    {
-      provide: ProductInfra,
-      useClass: ProductMock
-    }
   ]
 };

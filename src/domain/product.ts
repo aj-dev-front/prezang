@@ -4,7 +4,7 @@ import {
 } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 
-import { Product } from '../app/product/product';
+import { Product } from '../app/product/product.model';
 import { Infra } from '../infra/infra';
 import { ProductInfra } from '../token';
 
