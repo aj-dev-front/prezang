@@ -7,7 +7,7 @@ import {
 import { Auth } from '../profil/auth';
 import { Consulter } from './consulter-product';
 import { DetailProduct } from './detail-product';
-import { Product } from './product';
+import { ProductPage } from './product';
 
 const productGuard: CanActivateFn = () => {
     const auth = inject(Auth);
@@ -17,7 +17,7 @@ const productGuard: CanActivateFn = () => {
 export default [
     {
         path: '', // /products
-        component: Product,
+        component: ProductPage,
 
     },
     {

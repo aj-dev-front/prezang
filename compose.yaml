@@ -1,0 +1,20 @@
+services:
+  angular-prod:
+    build:
+      context: .
+      dockerfile: Containerfile
+    image: prezangize
+    ports:
+      - "8976:8080"
+
+  angular-dev:
+    build:
+      context: .
+      dockerfile: Containerfile.dev
+    ports:
+      - "2845:4200"
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /app

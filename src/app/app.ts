@@ -8,9 +8,11 @@ import {
   RouterOutlet,
 } from '@angular/router';
 
+import { List } from './list/list';
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet, RouterLink, List],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

@@ -22,12 +22,22 @@ export type ItemType = {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class List {
-  protected readonly items = signal<ItemType[]>([]).asReadonly();
+  protected readonly items = signal<ItemType[]>([
+    {id: 1, value: {
+      hello: "world"
+    }},
+    {id: 2, value: {
+      toto: "titi"
+    }}
+  ]).asReadonly();
 
   manageActions(event: ItemActions) {
     switch(event.type) {
       case 'plus':
+        console.log(event.id, event.quantity)
+        break;
       case 'remove':
+        console.log(event.id)
     }
   }
 }
