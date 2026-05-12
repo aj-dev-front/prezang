@@ -1,7 +1,4 @@
-import {
-  Observable,
-  of,
-} from 'rxjs';
+import { Observable, of } from 'rxjs';
 
 import { Product } from '../app/product/product.model';
 import products from '../mocks/products.json';

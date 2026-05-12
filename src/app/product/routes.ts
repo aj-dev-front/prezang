@@ -1,8 +1,5 @@
 import { inject } from '@angular/core';
-import {
-  CanActivateFn,
-  Routes,
-} from '@angular/router';
+import { CanActivateFn } from '@angular/router';
 
 import { Auth } from '../profil/auth';
 import { Consulter } from './consulter-product';
@@ -28,4 +25,4 @@ export default [
         path: ':yoyoyo', // /products/1, /products/34, product/hello
         component: DetailProduct,
     },
-] satisfies Routes;
+];

@@ -1,10 +1,5 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  inject,
-} from '@angular/core';
-
-import { ProductDomain } from '../../domain/product';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ProductDomain } from '@domain/product';
 
 @Component({
   selector: 'app-product',
@@ -15,5 +10,6 @@ import { ProductDomain } from '../../domain/product';
 })
 export class ProductPage {
   private readonly productsDomain = inject(ProductDomain);
+
   protected readonly products = this.productsDomain.recupererListeProduitsPagePrincipal();
 }

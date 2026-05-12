@@ -1,14 +1,11 @@
-import {
-  EnvironmentProviders,
-  makeEnvironmentProviders,
-} from '@angular/core';
+import { EnvironmentProviders, makeEnvironmentProviders } from '@angular/core';
 
-import { ProductMock } from '../../infra/product-mock';
+import { ProductBack } from '../../infra/product-back';
 import { ProductInfra } from '../../token';
 
-export default makeEnvironmentProviders([
+export const provideInfra = makeEnvironmentProviders([
     {
         provide: ProductInfra,
-        useClass: ProductMock,
+        useClass: ProductBack,
     }
-]) satisfies EnvironmentProviders
+]) satisfies EnvironmentProviders;

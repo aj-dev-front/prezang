@@ -1,12 +1,5 @@
-import {
-  Component,
-  inject,
-} from '@angular/core';
-import {
-  Router,
-  RouterLink,
-  RouterOutlet,
-} from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 
 import { List } from './list/list';
 

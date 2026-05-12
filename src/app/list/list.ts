@@ -1,13 +1,6 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 
-import {
-  Item,
-  ItemActions,
-} from '../item/item';
+import { Item, ItemActions } from '../item/item';
 
 export type ItemType = {
   id: number,
